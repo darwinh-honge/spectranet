@@ -25,7 +25,7 @@
 - **Unified Input Support:** Grid (`T,H,W,C`) and Node (`T,N,C` or `T,N`) formats.
 - **Safe Cropping:** Cropping is applied only for grid inputs; node inputs are automatically preserved.
 - **Residual Forecasting:** Optional residual-to-last prediction (`y = last_input + delta`).
-- **Metrics:** RMSE, MAE, SMAPE, R2 (Global & Per-channel).
+- **Metrics:** RMSE, MAE, R2.
 - **Artifacts:** Saves best checkpoint + test predictions + JSON summary.
 
 ---
@@ -162,8 +162,6 @@ The evaluation reports:
 RMSE
 
 MAE
-
-SMAPE
 
 R²
 
